@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+.navbar {
+    padding: 20.5px;
+}
+.navbar i {
+    font-size: 40px;
+    color: rgba(22, 72, 99, 1);   
+}
+.navbar li a {
+    font-size: 20px;
+    color: rgba(22, 72, 99, 1);
+    font-weight: 600;
+}
+.exercises .top span {
+    font-size: 28.7px;
+    font-weight: 700;
+}
+.exercises .content p {
+    font-size: 40px;
+    font-weight: 700;
+}
+.exercises .content .btn {
+    width: 220px;
+    height: 61px;
+    border-radius: 37.756px;
+    background: #164863;
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 56px;
+}
+.exercises .content .para p {
+    width: 80%;
+}
+.exercises .content .btn a {
+    text-decoration: none;
+    font-size: 24.5;
+    color: rgba(255, 255, 255, 1);
+}
+@media (max-width:776px) {
+    .exercises .content p {
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .exercises .content .btn {
+        width: 180px;
+    }
+    .exercises .content .btn a {
+        font-size: 22px;
+    }
+    .exercises .content .image {
+        width: 554px;
+        height: 500px;
+    }
+    .exercises .content .image img {
+        width: 100%;
+    }
+}
+@media (max-width:556px) {
+    .exercises .content .image {
+        display: none;
+    }
+    .exercises .content .para {
+        text-align: center;
+    }
+    .exercises .content .para p {
+        width: 100%;
+        padding: 0 20px;
+    }
+}

@@ -1,0 +1,114 @@
+.navbar {
+    padding: 20.5px;
+}
+.navbar i {
+    font-size: 40px;
+    color: rgba(22, 72, 99, 1);   
+}
+.navbar li a {
+    font-size: 20px;
+    color: rgba(22, 72, 99, 1);
+    font-weight: 600;
+    margin-left: 20px;
+}
+.setting {
+    width: 190px;
+    padding: 20px;
+    background-image: linear-gradient(116.82deg, #164863 0%, #9BBEC8 100%, #86A8B1 100%);
+    
+}
+.setting .item {
+    color: white;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.setting .item img {
+    margin-left: 8px;
+}
+.newMember .title {
+    font-size: 32px;
+    font-weight: 700;
+
+}
+.newMember .title img {
+    margin-left: 20px;
+}
+.newMember .btn {
+    background-color: rgba(22, 72, 99, 1);
+    color: white;
+    height: 45px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 8px;
+
+}
+.newMember .box {
+    box-shadow: 0px 0px 13.899999618530273px 1px rgba(0, 0, 0, 0.15);
+    border-radius: 24px;
+    padding: 30px;
+
+}
+.newMember .box .admins {
+    border-bottom: 1px solid  rgba(166, 187, 190, 1);
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+.newMember .box .left {
+    display: flex;
+    align-items: center;
+}
+.newMember .box .left span {
+    font-size:24px ;
+    font-weight: 600;
+}
+.newMember .box .left img {
+    margin-right: 20px;
+}
+.newMember .box .left img:hover {
+    cursor: pointer;
+}
+.newMember .box .right img {
+    margin-left: 20px;
+}
+.newMember .box .right {
+    font-size: 24px;
+    font-weight: 600;
+    color: rgba(0, 0, 0 , 1);
+}
+@media (max-width:700px) {
+    .newMember .admins {
+    
+        flex-direction: column;
+        justify-content: center;
+    }
+    .newMember .left {
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .newMember .right {
+        margin: 0 auto;
+    }
+}
+@media (max-width:556px) {
+    .newMember .banner .title {
+        font-size: 20px;
+    }
+    .newMember .banner .btn {
+        font-size: 16px;
+    }
+    .newMember .left {
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .newMember .right span {
+        font-size: 18px;
+    }
+    .newMember .box .left span {
+        font-size:18px ;
+        font-weight: 600;
+    }
+}

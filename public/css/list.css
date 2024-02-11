@@ -1,0 +1,124 @@
+
+.navbar {
+    padding: 20.5px;
+}
+.navbar i {
+    font-size: 40px;
+    color: rgba(22, 72, 99, 1);   
+}
+.navbar li a {
+    font-size: 20px;
+    color: rgba(22, 72, 99, 1);
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.listpage .banner p {
+    font-size: 31px;
+    font-weight: 700;
+    color: rgba(22, 72, 99, 1);
+}
+.listpage .banner p span {
+    font-size: 26px;
+    font-weight: 500;
+    color:rgba(22, 72, 99, 1);
+}
+.listpage .category .boxes {
+    color: #000;
+    font-size: 32.727px;
+    font-weight: 500;
+    border-radius: 106.364px;
+    padding: 0 20px;
+    margin-left: 25px;
+    
+}
+.listpage .category img {
+    margin-left: 15px;
+}
+.listpage .category .one {
+    background: rgba(177, 64, 86, 0.30);   
+}
+.listpage .category .two {
+    background-color: rgba(137, 181, 236, 0.5);
+    
+}
+.listpage .category .three {
+    background-color:rgba(48, 78, 100, 0.5);
+    ;
+}
+.listpage .category .four {
+    background-color: rgba(148, 103, 232, 0.5);
+}
+
+.listpage .list .item {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(216, 216, 216, 1);
+    align-items: center;
+    padding: 10px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 11.062322616577148px 2.01133131980896px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    margin: 0 auto 25px auto;
+}
+.listpage .list .item:hover {
+    border: 2px solid blueviolet;
+    transition: 0.7s;
+    transform: translateY(-7px);
+    cursor: pointer;
+}
+.listpage .list .item img {
+    margin-left: 20px;
+}
+.listpage .list .item div {
+    display: flex;
+    align-items: center;
+}
+.listpage .list .item div p {
+    margin-bottom: 0;
+    color: #B8B8B8;
+    font-weight: 500;
+    font-size: 28px;
+}
+.listpage .list .item input {
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width:992px) {
+    .listpage .category .boxes {
+        font-size: 20px;
+    }  
+}
+
+@media (max-width:992px) {
+    .listpage .category .boxes {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+    }  
+}
+@media (max-width:776px) {
+    .listpage .category .boxes {
+        margin-bottom: 10px;
+    }
+    .listpage .category  {
+        flex-direction: column;
+    }
+}
+@media (max-width:556px) {
+    .listpage .list .item input {
+        width: 25px;
+        height: 25px;
+    }
+    .listpage .list .item div p {
+        font-size: 22px;
+    }
+    .listpage .banner p {
+        font-size: 25px;
+    }
+    .listpage .banner p span {
+        font-size: 20px;
+    }
+    
+}

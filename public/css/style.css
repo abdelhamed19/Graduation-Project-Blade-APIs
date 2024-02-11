@@ -1,0 +1,454 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+body {
+    font-family: 'Cairo', sans-serif;
+}
+.activeLink {
+    color: #164863;
+    font-size: 22px;
+    font-weight: 800;
+}
+/* navbar */
+.navbar {
+   padding: 20.5px;
+   background-color: rgba(217, 217, 217, 1);
+}
+.navbar>.container {
+    justify-content: space-between;
+}
+.navbar-nav {
+    width: 100%;
+
+}
+.navbar-nav li a {
+    font-size: 20px;
+    margin-left: 15px;
+}
+.navbar-nav li img {
+    padding-top: 5px;
+    margin-left: 15px;
+}
+
+.buttons .btn {
+    width: 159px;
+    height: 40px;
+    border-radius: 21.5px;
+    background: #164863;
+}
+.buttons .btn a {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+.buttons .login {
+    margin-right: 20px;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+/* landing page */
+.landingPage {
+    background: linear-gradient(107deg, #164863 0%, #BED8D9 100%);
+}
+.landingPage .container {
+    height: 650px;
+}
+.landingPage h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 62px;
+    margin-bottom: 35px;
+}
+
+.landingPage p {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.landingContent .btn {
+    width: 216px;
+    height: 56.195px;
+    border-radius: 37.756px;
+    background: #164863;
+    color: #FFF;
+    font-size: 24.585px;
+    font-weight: 600;
+}
+/* sec2  */
+.section2 .content p {
+    color: #164863;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 62px;
+}
+.section2 .btn {
+    width: 216px;
+    height: 56.195px;
+    border-radius: 37.756px;
+    background: #164863;
+    color: #FFF;
+    font-size: 24.585px;
+    font-weight: 600;
+    margin-top: 80px;
+}
+/* sec3  */
+.sec3 {
+    background-image: linear-gradient(107deg, #164863 0%, #BED8D9 100%);
+}
+.sec3 .container {
+    height: 600px;
+}
+.sec3 .content {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 62px;
+    margin-bottom: 20px;
+}
+/* sec4  */
+.sec4 .content p {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 62px;
+    margin-bottom: 20px;
+}
+.sec4 .btn {
+    width: 216px;
+    height: 56.195px;
+    border-radius: 37.756px;
+    background: #164863;
+    color: #FFF;
+    font-size: 24.585px;
+    font-weight: 600;
+    margin-top: 80px;
+}
+/* footer  */
+.footer {
+    background-image: linear-gradient(107deg, #164863 0%, #BED8D9 100%);
+    padding: 40px 0;
+    text-align: center;
+    cursor: pointer;
+}
+.footer img {
+    width: 243px;
+    height: 160px;
+}
+.footer img:hover {
+    transform: scale(1.1);
+    transition: 2s;
+}
+.footer .coll-5 ul li,
+.footer .coll-4 p {
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+}
+.footer .coll-5 ul li:hover,
+.footer .coll-4 p:hover {
+    font-weight: bold;
+    transform: translateY(-5px);
+    transition: 2s;
+}
+.footer .coll-4 .mail {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+.footer .coll-4 .mail i {
+    margin-right: 7px;
+}
+.footer .coll-4 .icons .fa-brands{
+    color: #FFF;
+    font-size: 30px;
+    margin-left: 20px;
+}
+.footer .coll-4 .icons i:hover {
+    transform: rotate(360deg) scale(1.3);
+    transition: 2s;
+}
+.footer .coll-4 .icons i:first-child:hover {
+    color: blue;
+}
+.footer .coll-4 .icons i:nth-child(2):hover {
+    color: green;
+}
+.footer .coll-4 .icons i:last-child:hover {
+    color: red;
+}
+
+/* media  */
+
+@media (min-width: 556px) {
+    .landingPage h2,
+    .landingPage p {
+        color: #164863;
+    }
+    .landingPage h2 {
+        font-size: 40px;
+    }
+    .landingPage p {
+        font-size: 24px;
+    }
+    .sec3 .content {
+        color: #164863;
+    }
+   .section2 .content p {
+    font-size: 40px;
+    }
+
+   .sec3 .content{
+    font-size: 40px;
+   }
+
+  }
+  @media (max-width: 992px) {
+    .sec4 img {
+        width: 400px;
+    }
+    .sec4 .content p {
+        font-size: 30px;
+    }
+    .buttons {
+        margin: 0 auto;
+    }
+  }
+  @media (max-width: 556px) {
+    .sec4 img,
+    .sec3 img {
+        width: 300px;
+    }
+    .sec4 .content p,
+    .sec3 .content p {
+        font-size: 26px;
+    }
+    .sec4 .btn {
+        margin-top: 50px;
+    }
+    .landingContent .btn ,
+    .section2 .btn ,
+    .sec4 .btn {
+        width: 170px;
+    }
+    .footer .coll-5 ul li{
+        font-size: 22px;
+    }
+    .buttons {
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+    }
+    /* .buttons .btn {
+        padding: 5px;
+        font-size: 14px;
+    } */
+
+  }
+@media (max-width:430px) {
+    .buttons .reg {
+        margin-bottom: 10px;
+    }
+    .buttons .login {
+        margin-right: 0;
+    }
+}
+
+  /* login and register */
+  .loginPage {
+    background: linear-gradient(117deg, #164863 0%, #9BBEC8 100%), url('../image/login/bubles.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+.loginPage .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+  }
+  .loginPage .image {
+    display: flex;
+    flex-direction: column;
+    width: 35%
+  }
+  .loginPage .image .logoo {
+    width: 100%;
+  }
+  .loginPage .image .ulogoo {
+   width: 100%;
+  }
+  .loginPage form {
+    width: 50%;
+    height: 580px;
+    border-radius: 16px;
+    background-color: #fff;
+    padding: 50px 60px 70px 60px;
+
+  }
+  @media (max-width:767px) {
+    .loginPage form {
+        width: 55%;
+        padding: 34px 25px 97px 21px;
+        height: 450px;
+    }
+  }
+  @media (max-width:576px) {
+    .loginPage form {
+        width: 94%;
+        height: 480px;
+    }
+  }
+  .loginPage form .title {
+    color: #164863;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .loginPage form .btn {
+    width: 100%;
+    background-color: rgba(22, 72, 99, 0.60);
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  .loginPage form .btn a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .loginPage form p a {
+    color: rgba(22, 72, 99, 1);
+    font-weight: bold;
+  }
+  form input::placeholder{
+    color: #ABABAB;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  /* hover on all buttons */
+ .btn:hover {
+    box-shadow: 0 0 20px #0ebac5;
+    background-color: white;
+    transform: translateY(-4px);
+    transition: 1ms;
+ }
+ .btn:hover {
+    box-shadow: 0 0 20px #0ebac5;
+    background-color:  #164863;
+    transform: translateY(-5px);
+    .log-link:hover {
+        color: #f5f5f5;
+     }
+    transition: 2s;
+ }
+ .activeLink:hover {
+    color: #164863;
+    font-size: 22px;
+    font-weight: 800;
+    transform: translateY(-2px);
+    transition: 1ms;
+ }
+ .custom-link {
+    /* Add your regular link styles here */
+    color: blue;
+    text-decoration: none; /* Removes the underline */
+  }
+
+  .custom-link:hover {
+    /* Add styles for when the link is hovered over */
+    color: red; /* For example, change text color to red */
+  }
+
+/* profile */
+.navbar i {
+    font-size: 40px;
+    color: rgba(22, 72, 99, 1);
+}
+
+.profile-banner .content h2 {
+    color: #164863;
+    font-size: 25px;
+    font-weight: 700;
+
+}
+.profile-banner .content p {
+    color: #164863;
+    font-size: 23px;
+    font-weight: 600;
+}
+@media (min-width:992px) {
+    .profile-banner .content h2 {
+        font-size: 32px;
+    }
+    .profile-banner .content p {
+        font-size: 27px;
+    }
+}
+.profile-info {
+    border-radius: 68px 67px 0px 0px;
+    background: #FFF;
+    box-shadow: 0px -2px 16.4px 0px rgba(0, 0, 0, 0.10);
+    margin-top: 35px;
+}
+.profile-info .progress {
+    width: 93%;
+    margin: 0 auto;
+    height: 10px;
+    border-radius: 12px;
+    background: #D9D9D9;
+}
+.profile-info .progress .prog {
+    width: 25%;
+    height: 10px;
+    border-radius: 12px;
+    background: #164863;
+
+}
+.profile-info .prec {
+    color: #164863;
+    font-size: 30px;
+    font-weight: 500;
+    display: flex;
+    justify-content: end;
+    padding-left: 4%;
+}
+@media (max-width:556px) {
+    /* .profile-info form  {
+        width: 81%;
+    } */
+    .profile-info .container div span {
+        font-size: 20px;
+    }
+    .profile-info .progress {
+        width: 75%;
+    }
+    .profile-info .prec {
+        font-size: 25px;
+        padding-left: 6%;
+    }
+}
+@media (min-width:557px) {
+    .profile-info .progress  {
+        width: 83%;
+    }
+}
+@media (min-width:992px) {
+    .profile-info .progress  {
+        width: 91%;
+    }
+}
+.profile-info .container {
+    height: 386px;
+}
+.profile-info .container div {
+    display: flex;
+    align-items: center;
+}

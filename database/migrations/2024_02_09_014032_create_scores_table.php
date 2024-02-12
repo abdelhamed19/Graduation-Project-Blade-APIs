@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('scores', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->constrained();
-            $table->foreignId("activity_id")->constrained();
-            $table->foreignId("level_id")->constrained();
+            $table->foreignId('user_id')->nullable()->constrained()->nullOnDelete();
+            $table->foreignId("activity_id")->nullable()->constrained()->nullOnDelete();
+            $table->foreignId("level_id")->nullable()->constrained()->nullOnDelete();
             $table->boolean("played")->default(0);
             $table->string("answer")->nullable();
             $table->timestamps();

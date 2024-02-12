@@ -1,6 +1,6 @@
 <x-frontendlayout>
         <x-slot name="title">
-            Profile
+            Change Password
         </x-slot>
 
     <div class="loginPage  ">

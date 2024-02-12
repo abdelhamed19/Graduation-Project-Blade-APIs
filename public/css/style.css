@@ -347,7 +347,7 @@ body {
     .log-link:hover {
         color: #f5f5f5;
      }
-    transition: 2s;
+    transition: 1ms;
  }
  .activeLink:hover {
     color: #164863;
@@ -405,13 +405,13 @@ body {
     border-radius: 12px;
     background: #D9D9D9;
 }
-.profile-info .progress .prog {
-    width: 25%;
+/* .profile-info .progress .prog {
+    width: 0%;
     height: 10px;
     border-radius: 12px;
     background: #164863;
 
-}
+} */
 .profile-info .prec {
     color: #164863;
     font-size: 30px;

@@ -4,7 +4,7 @@
 }
 .navbar i {
     font-size: 40px;
-    color: rgba(22, 72, 99, 1);   
+    color: rgba(22, 72, 99, 1);
 }
 .navbar li a {
     font-size: 20px;
@@ -30,17 +30,17 @@
     border-radius: 106.364px;
     padding: 0 20px;
     margin-left: 25px;
-    
+
 }
 .listpage .category img {
     margin-left: 15px;
 }
 .listpage .category .one {
-    background: rgba(177, 64, 86, 0.30);   
+    background: rgba(177, 64, 86, 0.30);
 }
 .listpage .category .two {
     background-color: rgba(137, 181, 236, 0.5);
-    
+
 }
 .listpage .category .three {
     background-color:rgba(48, 78, 100, 0.5);
@@ -60,6 +60,14 @@
     box-shadow: 0px 0px 11.062322616577148px 2.01133131980896px rgba(0, 0, 0, 0.1);
     width: 70%;
     margin: 0 auto 25px auto;
+}
+.listpage .list .item .end {
+    border: 1px solid rgba(216, 216, 216, 1);
+    padding: 10px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 11.062322616577148px 2.01133131980896px rgba(0, 0, 0, 0.1);
+    width: 780Px;
+    height: 50px;
 }
 .listpage .list .item:hover {
     border: 2px solid blueviolet;
@@ -88,7 +96,7 @@
 @media (max-width:992px) {
     .listpage .category .boxes {
         font-size: 20px;
-    }  
+    }
 }
 
 @media (max-width:992px) {
@@ -96,7 +104,7 @@
         font-size: 20px;
         display: flex;
         align-items: center;
-    }  
+    }
 }
 @media (max-width:776px) {
     .listpage .category .boxes {
@@ -120,5 +128,5 @@
     .listpage .banner p span {
         font-size: 20px;
     }
-    
+
 }

@@ -2,8 +2,7 @@
 
 namespace App\Http\Controllers\Api\Activities;
 
-use App\Models\Score;
-use App\Models\Activity;
+use App\Models\{Score, Activity};
 use App\helpers\BaseResponse;
 use Illuminate\Support\Facades\App;
 use App\Http\Controllers\Controller;

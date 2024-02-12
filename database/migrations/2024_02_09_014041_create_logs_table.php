@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('logs', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->constrained();
-            $table->foreignId("level_id")->constrained();
+            $table->foreignId('user_id')->nullable()->constrained()->nullOnDelete();
+            $table->foreignId("level_id")->nullable()->constrained()->nullOnDelete();
             $table->integer("score")->default(0);
             $table->enum("status",["locked","unlocked"])->default("locked");
             $table->timestamps();

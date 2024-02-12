@@ -3,8 +3,6 @@
 namespace App\Http\Controllers\Api\Home;
 
 use App\helpers\BaseResponse;
-use App\Models\Level;
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 

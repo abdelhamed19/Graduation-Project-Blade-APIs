@@ -1,6 +1,6 @@
 <x-auth-layout >
     <x-slot name="title">
-        Login
+        Register
     </x-slot>
     <div class="loginPage  ">
         <div class="container d-flex flex-column flex-sm-row ">

@@ -2,6 +2,7 @@
     <x-slot name="title">
         Home
     </x-slot>
+    <x-alert type="success" />
     <!-- landing  -->
   <div class="landingPage">
     <div class="container text-center text-lg-end d-flex  flex-row-reverse align-items-center">

@@ -16,14 +16,14 @@
         <div
             class="container  flex-column justify-content-around flex-wrap align-content-center align-content-sm-start">
             <div>
-                <img src="image/profile/lock.png" style="width: 40px" alt="">
+                <img src="{{ asset("image/profile/lock.png") }}" style="width: 40px" alt="">
                 <a href="{{ route('changePasswordPage') }}">
                     <p class="fw-bold" style="color: #164863;">تغيير كلمة المرور</p>
                 </a>
             </div>
             <br>
             <div>
-                <img src="image/profile/lougout.png" style="width: 40px" alt="">
+                <img src="{{ asset("image/profile/lougout.png") }}" style="width: 40px" alt="">
                 <form method="POST" action="{{ route('users.destroy',Auth::user()->id) }}">
                     @csrf
                     @method('Delete')

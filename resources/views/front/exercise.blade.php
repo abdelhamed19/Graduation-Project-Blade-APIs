@@ -24,7 +24,7 @@
                                     <span class="me-3">التمارين</span>
                                 </div>
                                 <div class="category text-center justify-content-between">
-                                    <img src="image/stars.png" alt="">
+                                    <img src="{{ asset("image/stars.png") }}" alt="">
                                     <p class="mb-4">انواع التمارين داخل التطبيق متعدده ومختلفه مثل</p>
                                     <div class="row justify-content-center">
                                         <div class="col-10 col-sm-4 box ms-sm-3 mb-sm-3 one  mb-3"> تمارين للمشاعر</div>

@@ -29,7 +29,7 @@
         <div
             class="container d-flex flex-column justify-content-around flex-wrap align-content-center align-content-sm-start">
             <div class="item">
-                <img src="image/profile/star.png" alt="">
+                <img src="{{ asset("image/profile/star.png") }}" alt="">
                 <a href=""{{ route('levels') }}"">
                     <a href="{{ route('levels') }}">
                         <p class="fw-bold" style="color: #164863;">التمارين</p>
@@ -37,20 +37,20 @@
                 </a>
             </div>
             <div class="item">
-                <img src="image/profile/list.png" alt="">
+                <img src="{{ asset("image/profile/list.png") }}" alt="">
                 <a href="{{ route('list-view') }}">
                     <p class="fw-bold" style="color: #164863;">قائمة المهام</p>
                 </a>
             </a>
             </div>
             <div class="item">
-                <img src="image/profile/lock.png" alt="">
+                <img src="{{ asset("image/profile/lock.png") }}"alt="">
                 <a href="{{ route('changePasswordPage') }}">
                     <p class="fw-bold" style="color: #164863;">تغيير كلمة المرور</p>
                 </a>
             </div>
             <div class="item">
-                <img src="image/profile/lougout.png" alt="">
+                <img src="{{ asset("image/profile/lougout.png") }}" alt="">
                 <form method="POST" action="{{ route('logout') }}">
                     @csrf
                     <a href="{{ route('logout') }}"

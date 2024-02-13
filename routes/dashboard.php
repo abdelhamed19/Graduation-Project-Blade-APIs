@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::group(['middleware' => ['auth', 'role:super-admin']], function () {
+Route::group(['middleware' => ['auth', 'role:super-admin'], 'prefix' => 'dashboard'], function () {
     Route::get("dashboard", [ManageController::class, 'index'])->name('dashboard');
     Route::get("roles", [RolesController::class, 'roles'])->name('roles');
     Route::get("createRole", [RolesController::class, 'createRole'])->name('createRole');
@@ -27,9 +27,13 @@ Route::group(['middleware' => ['auth', 'role:super-admin']], function () {
     Route::get("add-level", [ManageController::class, 'addNewLevel'])->name('add-level');
     Route::post("store-level", [ManageController::class, 'storeLevel'])->name('store-level');
     Route::delete("delete-level/{level}", [ManageController::class, 'deleteLevel'])->name('delete-level');
+    Route::get("dashboardActivities/{name}",[ManageController::class, 'dashboardActivities'])->name('dashboardActivities');
+    Route::get("add-activity", [ManageController::class, 'addActivity'])->name('add-activity');
+    Route::post("store-activity", [ManageController::class, 'storeActivity'])->name('store-activity');
+    Route::delete("delete-activity/{activity}", [ManageController::class, 'deleteActivity'])->name('delete-activity');
 });
 
-Route::group(['middleware' => ['auth', 'role:super-admin|admin']], function () {
+Route::group(['middleware' => ['auth', 'role:super-admin|admin'], 'prefix' => 'dashboard'], function () {
     Route::get("roles", [RolesController::class, 'roles'])->name('roles');
     Route::get("createRole", [RolesController::class, 'createRole'])->name('createRole');
     Route::get("assignRole", [RolesController::class, 'assignRolePage'])->name('assignRole');
@@ -38,5 +42,4 @@ Route::group(['middleware' => ['auth', 'role:super-admin|admin']], function () {
     Route::get("add-level", [ManageController::class, 'addNewLevel'])->name('add-level');
     Route::get("dashboard-profile",[ManageController::class, 'profile'])->name('dashboard-profile');
     Route::delete('users/{user}', [RolesController::class, 'destroy'])->name('users.destroy');
-
 });

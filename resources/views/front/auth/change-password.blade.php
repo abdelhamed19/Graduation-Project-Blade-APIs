@@ -2,12 +2,11 @@
         <x-slot name="title">
             Change Password
         </x-slot>
-
     <div class="loginPage  ">
         <div class="container d-flex flex-column flex-sm-row ">
             <div class="image ">
-            <img src="image/login/image.png" class="logoo" alt="">
-            <img src="image/login/title.png" class="ulogoo" alt="">
+            <img src="{{ asset("image/login/image.png") }}" class="logoo" alt="">
+            <img src="{{ asset("image/login/title.png") }}" class="ulogoo" alt="">
             </div>
             <form action="{{ route("changePassword") }}" method="POST">
                 @csrf
@@ -33,5 +32,6 @@
              </form>
         </div>
     </div>
+    <br>
 
 </x-frontendlayout>

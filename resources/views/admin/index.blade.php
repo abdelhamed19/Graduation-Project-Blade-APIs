@@ -10,7 +10,7 @@
             <div class="container">
                 <div class="banner d-flex justify-content-between">
                     <div class="title">
-                        <img src="image/list/profile-2user.png" alt="">الاعضاء
+                        <img src="{{ asset("image/list/profile-2user.png") }}" alt="">الاعضاء
                     </div>
                     <div class="btn">
                         <img src="{{ asset('image/list/plus.png') }}"" alt="">
@@ -21,7 +21,7 @@
                     @foreach ($usersWithRoles as $user)
                         <div class="admins d-flex justify-content-between">
                             <div class="right">
-                                <img src="image/ciclre-removebg-preview.png" width="40" height="40" alt="">
+                                <img src="{{ asset("image/ciclre-removebg-preview.png") }}" width="40" height="40" alt="">
                                 <span>{{ $user->name }}</span>
                             </div>
                             @foreach ($user->roles as $role)

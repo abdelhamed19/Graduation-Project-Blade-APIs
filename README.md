@@ -2,11 +2,17 @@
 
 
 ## About Project
+BiBalance was my Graduation Project in computer science mansoura university, the app helps the people who suffer from bipolar disorder to get of the disorder by
+make some activities depends on the CBT technique, Gamification technique are applied so user have score and the score determine if user will continue
+the next level or not. 
 
-
-<!-- The project contain 2 side, one for Mobile app and this part was made with RestAPIs with base responses you can find the APIs code 
+The project contain 2 side, one for Mobile app and this part was made with RestAPIs with base responses you can find the APIs code 
 in app/http/controllers/API
-.-->
+contain some 
+
+### Packages used in APIs
+- **[Sanctum For Auth](https://vehikl.com/)**
+
 
 <!-- ## Learning Laravel
 

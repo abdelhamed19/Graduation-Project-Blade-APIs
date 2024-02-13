@@ -6,12 +6,21 @@ BiBalance was my Graduation Project in computer science mansoura university, the
 make some activities depends on the CBT technique, Gamification technique are applied so user have score and the score determine if user will continue
 the next level or not. 
 
-The project contain 2 side, one for Mobile app and this part was made with RestAPIs with base responses you can find the APIs code 
-in app/http/controllers/API
-contain some 
 
-### Packages used in APIs
-- **[Sanctum For Auth](https://vehikl.com/)**
+### APIs Part
+The project contain 2 side, one for Mobile app and this part was made with RestAPIs with base responses you can find the APIs code 
+in app/http/controllers/API, routes exist in routes/api.php
+contain some folder to get activities in levels and play activities and the logic applied to increase user score and unlock each level when score reached,
+also authentication and registration are included based on token
+
+- **[Package For Auth](https://laravel.com/docs/10.x/sanctum)**
+- **[Documentation on Postman](https://documenter.getpostman.com/view/31513137/2sA2r53Qgq)**
+
+### Blade Part
+The other part contain the interface in website, made with template engine, the properties for this part, so user can register/login/change password, confirm the test to ensure does he have the disorder or not, take a look on it's profile and dashboard for admins(Developers made app), Dashboard contain operations like adding admins
+create level and add it's activities, creating roles
+
+- **[Package For Roles and Permissions](https://spatie.be/docs/laravel-permission/v6/introduction)**
 
 
 <!-- ## Learning Laravel
